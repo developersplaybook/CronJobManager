@@ -12,7 +12,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RestSharp;
-using SireusLicenseVerification;
 using System;
 using System.Globalization;
 using System.IO;
@@ -25,13 +24,6 @@ namespace CronJobManager
 
         public static void Main(string[] args)
         {
-            var licenseManager = new LicenseManager();
-            if (!licenseManager.ValidateLicense("appsettings.json"))
-            {
-                Console.WriteLine("Invalid license key.");
-                Environment.Exit(0);
-            }
-
             Directory.SetCurrentDirectory(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             CreateHostBuilder(args).Build().Run();
         }

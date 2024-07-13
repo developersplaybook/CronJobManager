@@ -24,7 +24,6 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="8.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="SireusLicenseVerification" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
